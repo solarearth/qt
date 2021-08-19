@@ -8968,7 +8968,7 @@ func (ptr *QTouch3DInputHandler) DestroyQTouch3DInputHandlerDefault() {
 }
 
 type QValue3DAxis struct {
-	ptr QAbstract3DAxis
+	QAbstract3DAxis
 }
 
 type QValue3DAxis_ITF interface {
@@ -9008,7 +9008,7 @@ func NewQValue3DAxisFromPointer(ptr unsafe.Pointer) (n *QValue3DAxis) {
 	n.InitFromInternal(uintptr(ptr), "datavisualization.QValue3DAxis")
 	return
 }
-func NewQValue3DAxis(parent QAbstract3DAxis_ITF) *QValue3DAxis {
+func NewQValue3DAxis(parent core.QObject_ITF) *QValue3DAxis {
 
 	return internal.CallLocalFunction([]interface{}{"", "", "datavisualization.NewQValue3DAxis", "", parent}).(*QValue3DAxis)
 }
